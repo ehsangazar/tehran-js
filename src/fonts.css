@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Anjoman;
+  src: url('./../static/assets/fonts/AnjomanFaNum-Regular.eot');
+  src: url('./../static/assets/fonts/AnjomanFaNum-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('./../static/assets/fonts/AnjomanFaNum-Regular.woff2') format('woff2'),
+    url('./../static/assets/fonts/AnjomanFaNum-Regular.woff') format('woff'),
+    url('./../static/assets/fonts/AnjomanFaNum-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Anjoman;
+  src: url('./../static/assets/fonts/AnjomanFaNum-Bold.eot');
+  src: url('./../static/assets/fonts/AnjomanFaNum-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./../static/assets/fonts/AnjomanFaNum-Bold.woff2') format('woff2'),
+    url('./../static/assets/fonts/AnjomanFaNum-Bold.woff') format('woff'),
+    url('./../static/assets/fonts/AnjomanFaNum-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Anjoman;
+  src: url('./../static/assets/fonts/AnjomanFaNum-SemiBold.eot');
+  src: url('./../static/assets/fonts/AnjomanFaNum-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('./../static/assets/fonts/AnjomanFaNum-SemiBold.woff2') format('woff2'),
+    url('./../static/assets/fonts/AnjomanFaNum-SemiBold.woff') format('woff'),
+    url('./../static/assets/fonts/AnjomanFaNum-SemiBold.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Anjoman;
+  src: url('./../static/assets/fonts/AnjomanFaNum-SemiBold.eot');
+  src: url('./../static/assets/fonts/AnjomanFaNum-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('./../static/assets/fonts/AnjomanFaNum-SemiBold.woff2') format('woff2'),
+    url('./../static/assets/fonts/AnjomanFaNum-SemiBold.woff') format('woff'),
+    url('./../static/assets/fonts/AnjomanFaNum-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
