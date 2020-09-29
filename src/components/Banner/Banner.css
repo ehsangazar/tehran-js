@@ -1,0 +1,37 @@
+.Banner--Parent {
+    width: 100%;
+    position: relative;
+    max-width: 120rem;
+    margin: 0 auto;
+    height: 100vh;
+}
+.Banner {
+    display: flex;
+    align-items: center;
+}
+.Banner .Banner--Headline {
+    flex-shrink: 0;
+    flex-basis: 33%;
+    padding: 0 25px;
+    min-height: 400px;
+}
+.Banner--Parent .Banner--Image {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    z-index: -1;
+}
+.Banner--Parent .Banner--Image img {
+    width: 100%;
+    max-width: 900px;
+    object-fit: cover;
+}
+
+@media (max-width: 960px) {
+    .Banner .Banner--Headline {
+        flex-basis: 100%;
+    }
+    .Banner--Parent .Banner--Image {
+        opacity: 0.2;
+    }
+}

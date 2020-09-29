@@ -1,0 +1,17 @@
+.LastPost {
+    display: flex;
+}
+.LastPost article {
+    flex-grow: 1;
+}
+.LastPost img {
+    width: 100%;
+}
+@media (max-width: 960px) {
+    .LastPost {
+        flex-direction: column;
+    }
+    .LastPost article {
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,43 @@
+.Footer {
+    padding: 0 20px;
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+.Footer--Followers {
+    display: flex;
+    align-items: center;
+}
+.Footer--Followers h2 {
+    margin: 0;
+}
+.Footer--Followers ul {
+    margin: 0 20px;
+}
+.Footer--Followers ul li {
+    list-style: none;
+    margin: 0;
+}
+.Footer--Followers ul li a {
+    background-color: var(--color-primary);
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fontSize-4);
+    opacity: 0.8;
+    margin: 0 3px;
+}
+.Footer--Followers ul li a:hover {
+    justify-content: center;
+    font-size: var(--fontSize-4);
+    opacity: 1;
+}
+@media (max-width: 960px) {
+    .Footer {
+        flex-direction: column;
+    }
+}

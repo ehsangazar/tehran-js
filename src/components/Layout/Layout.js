@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import logoImg from './logo.jpg'
+import Footer from '../Footer/Footer'
 import './Layout.css'
 
 const Layout = ({ location, title, children }) => {
@@ -26,14 +27,35 @@ const Layout = ({ location, title, children }) => {
   }
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
+    <div data-is-root-path={isRootPath}>
+      <header className="container">
+        <div className="logo">
+          <Link to="/">
+            <img src={logoImg} />
+          </Link>
+        </div>
+        {/* <div className="menu">
+          <ul>
+            <li>
+              <Link to="/about">
+                درباره
+              </Link>
+            </li>
+            <li>
+              <Link to="/events">
+                رویداد‌ها
+              </Link>
+            </li>
+            <li>
+              <Link to="/about">
+                تماس
+              </Link>
+            </li>
+          </ul>
+        </div> */}
+      </header>
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+      <Footer />
     </div>
   )
 }

@@ -1,0 +1,26 @@
+.Button {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0 25px;
+    border: none;
+    height: 60px;
+    line-height: 60px;
+    transition-duration: 400ms;
+    cursor: pointer;
+    margin: 10px;
+}
+.Button.white {
+    background-color: #eee;
+    color: var(--color-text);
+}
+.Button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+}
+@media (max-width: 960px) {
+    .Button {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
