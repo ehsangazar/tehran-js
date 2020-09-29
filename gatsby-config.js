@@ -6,7 +6,7 @@ module.exports = {
       summary: `کسانی که فارسی‌زبان هستند`,
     },
     description: `این وب‌سایتی برای هماهنگی رویداد‌های جاوا اسکریپت است`,
-    siteUrl: `https://tehran-js.ehsangazar.github.io/`,
+    siteUrl: `https://tehranjs.ehsangazar.com/`,
     social: {
       twitter: `tehranjs`,
     },
