@@ -9,7 +9,7 @@
   --maxWidth-xl: 36rem;
   --maxWidth-2xl: 42rem;
   --maxWidth-3xl: 48rem;
-  --maxWidth-4xl: 56rem;
+  --maxWidth-4xl: 60rem;
   --maxWidth-full: "100%";
   --maxWidth-container: 100rem;
   --spacing-px: "1px";
@@ -72,6 +72,7 @@ html {
   -webkit-font-smoothing: antialiased;
   direction: rtl;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -104,7 +105,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-heading);
+  font-family: var(--fontSize-5);
   margin-top: var(--spacing-12);
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
@@ -122,7 +123,7 @@ h6 {
 
 h1 {
   font-weight: var(--fontWeight-black);
-  font-size: var(--fontSize-6);
+  font-size: var(--fontSize-5);
   color: var(--color-heading-black);
 }
 
@@ -245,4 +246,14 @@ a:focus {
 .container {
   max-width: var(--maxWidth-container);
   margin: 0 auto;
+}
+.container-2 {
+  max-width: var(--maxWidth-4xl);
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+    h1 {
+      font-size: var(--fontSize-3);
+    }
 }

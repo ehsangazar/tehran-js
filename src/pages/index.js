@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/Layout/Layout"
@@ -8,20 +8,19 @@ import SEO from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+  const [posts,setPosts] = useState([])
+
+  useEffect(()=>{
+    if (data.allMarkdownRemark.nodes.length > 0){
+      setPosts(data.allMarkdownRemark.nodes)
+    }
+  }, [data.allMarkdownRemark.nodes])
 
   if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <SEO title="All posts" />
-        <p>
-          هیچ متنی یافت نشد
-        </p>
-      </Layout>
-    )
+    return null
   }
 
-  const lastPost = posts.pop()
+  const lastPost = posts[0]
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -31,13 +30,13 @@ const BlogIndex = ({ data, location }) => {
 
       <LastPost post={lastPost} />
 
-      {posts.length > 0 &&
+      {posts.slice(1).length > 0 &&
         <div>
         <h2>
           رویداد‌های قبلی
         </h2>
           <ol style={{ listStyle: `none` }}>
-            {posts.map(post => {
+            {posts.slice(1).map(post => {
               const title = post.frontmatter.title || post.fields.slug
 
               return (

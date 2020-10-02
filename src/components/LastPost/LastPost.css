@@ -7,6 +7,11 @@
 .LastPost img {
     width: 100%;
 }
+.register-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 @media (max-width: 960px) {
     .LastPost {
         flex-direction: column;

@@ -3,12 +3,13 @@ import './Button.css'
 
 const Button = ({
     children,
-    model
+    model,
+    onClick,
 }) => {
     return (
-        <button className={`Button ${model}`}>
-            {children}
-        </button>
+      <button onClick={onClick} className={`Button ${model}`}>
+        {children}
+      </button>
     )
 }
 

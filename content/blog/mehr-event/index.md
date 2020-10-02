@@ -23,3 +23,22 @@ description: "Hello World"
         </div>
     </div>
 </div>
+<div class="speaker">
+    <img src="./unknown.png" />
+    <div class="speaker-content">
+        <h3>
+            شما سخنران باشید؟
+        </h3>
+        <h5>
+            - ناشناس
+        </h5>
+        <div class="social-media">
+            <a href="https://au.linkedin.com/in/gazar">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="http://fa.ehsangazar.com/">
+                <i class="fa fa-link"></i>
+            </a>
+        </div>
+    </div>
+</div>

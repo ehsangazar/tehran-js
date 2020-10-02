@@ -4,15 +4,15 @@ import './Footer.css'
 
 const Footer = ({ post }) => {
     return (
-        <div className="Footer container">
+        <div className="Footer">
             <div className="Footer--Followers">
-                <h2>
+                <span>
                     تهران‌جی‌اس را دنبال کنید
-                </h2>
+                </span>
                 <ul>
                     <li>
                         <a href="https://t.me/tehranjs">
-                            <i class="fa fa-telegram"></i>
+                            <i className="fa fa-telegram"></i>
                         </a>
                     </li>
                 </ul>

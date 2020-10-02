@@ -1,9 +1,13 @@
 .Footer {
-    padding: 0 20px;
+    padding: 30px;
     display: flex;
-    height: 200px;
+    height: 100px;
+    border-top: 1px solid #eee;
     align-items: center;
     justify-content: space-between;
+    max-width: var(--maxWidth-4xl);
+    margin: 0 auto;
+    margin-top: 200px;
 }
 .Footer--Followers {
     display: flex;
@@ -39,5 +43,6 @@
 @media (max-width: 960px) {
     .Footer {
         flex-direction: column;
+        margin-top: 40px;
     }
 }
