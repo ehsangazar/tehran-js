@@ -34,13 +34,5 @@ description: "Hello World"
         <h5>
             - ناشناس
         </h5>
-        <div class="social-media">
-            <a href="https://au.linkedin.com/in/gazar">
-                <i class="fa fa-linkedin"></i>
-            </a>
-            <a href="http://fa.ehsangazar.com/">
-                <i class="fa fa-link"></i>
-            </a>
-        </div>
     </div>
 </div>
