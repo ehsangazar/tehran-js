@@ -1,0 +1,45 @@
+.Members {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.Members .member img {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+.Members .member {
+  position: relative;
+  cursor: pointer;
+}
+.Members .member .tooltip::before {
+  content: ' ';
+  width: 0; 
+  height: 0;
+  position: absolute; 
+  top: -4px;
+  left: 45%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #333;
+}
+.Members .member .tooltip {
+  display: none;
+  background-color: #333;
+  border-radius: 5px;
+  color: white;
+  position: absolute;
+  top: 60px;  
+  font-size: 10px;
+  min-width: 100px;
+  text-align: center;
+  top: 60px;
+  padding: 5px 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Members .member:hover .tooltip {
+  display: block;
+}

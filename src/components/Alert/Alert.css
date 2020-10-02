@@ -1,0 +1,26 @@
+.Alert {
+  width: 100%;
+}
+
+.Alert.Alert-success {
+  background-color: var(--color-success);
+  color: white;
+  padding: 0 25px;
+  border: none;
+  height: 60px;
+  line-height: 60px;
+  transition-duration: 400ms;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.Alert.Alert-error {
+  background-color: var(--color-error);
+  color: white;
+  padding: 0 25px;
+  border: none;
+  height: 60px;
+  line-height: 60px;
+  transition-duration: 400ms;
+  cursor: pointer;
+  margin: 10px 0;
+}

@@ -50,7 +50,9 @@
     justify-content: center;
     opacity: 1;
 }
-
+.Banner button {
+  margin: 5px;
+}
 @media (max-width: 960px) {
     .Banner--Parent {
         height: auto;

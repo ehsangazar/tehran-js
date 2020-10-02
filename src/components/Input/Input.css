@@ -1,6 +1,5 @@
-.Button {
-    background-color: var(--color-primary);
-    color: white;
+.Input {
+    color: #333;
     padding: 0 25px;
     border: none;
     height: 60px;
@@ -8,23 +7,26 @@
     transition-duration: 400ms;
     cursor: pointer;
     margin: 10px 0;
-    text-align: center;
+    width: 100%;
 }
-.Button.white {
-    background-color: #eee;
-    color: var(--color-text);
+.Input input {
+    color: #333;
+    padding: 0 25px;
+    border: none;
+    height: 60px;
+    line-height: 60px;
+    transition-duration: 400ms;
+    cursor: pointer;
+    border: 1px solid #eee;
+    width: 100%;
 }
-.Button:hover {
+.Input input:hover {
     background-color: var(--color-secondary);
     color: var(--color-text);
 }
-.Button:disabled {
-  opacity: 0.7;
-}
 @media (max-width: 960px) {
-    .Button {
+    .Input input{
         width: 100%;
-        text-align: center;
         margin: 10px 0;
     }
 }

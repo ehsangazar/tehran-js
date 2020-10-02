@@ -96,6 +96,8 @@ export const pageQuery = graphql`
         html
         frontmatter {
           title
+          eventId
+          zoom
           date(formatString: "MMMM DD, YYYY")
           description
         }

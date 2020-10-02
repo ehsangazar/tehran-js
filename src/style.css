@@ -52,6 +52,8 @@
   --color-primary: #33c;
   --color-secondary: #fddd55;
   --color-text: #2e353f;
+  --color-success: #6ab04c;
+  --color-error: #eb4d4b;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
   --color-heading-black: #2b2f3e;
@@ -80,11 +82,13 @@ body {
   direction: rtl;
   font-size: var(--fontSize-root);
   color: var(--color-text);
+  box-sizing: border-box;
 }
 
 * {
   direction: rtl;
   text-align: right;
+  box-sizing: border-box !important;
 }
 
 footer {
